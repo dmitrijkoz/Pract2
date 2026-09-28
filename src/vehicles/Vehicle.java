@@ -2,7 +2,6 @@ package vehicles;
 
 public abstract class Vehicle {
 
-    // Общие поля
     private String model;
     private String license;
     private String color;
@@ -10,10 +9,8 @@ public abstract class Vehicle {
     private String ownerName;
     private String insuranceNumber;
 
-    // Защищённое поле для наследников
     protected String engineType;
 
-    // Конструктор
     public Vehicle(
             String model,
             String license,
@@ -32,8 +29,6 @@ public abstract class Vehicle {
         this.engineType = engineType;
     }
 
-    // ===== model =====
-
     public String getModel() {
         return model;
     }
@@ -42,7 +37,6 @@ public abstract class Vehicle {
         this.model = model;
     }
 
-    // ===== license =====
 
     public String getLicense() {
         return license;
@@ -52,7 +46,6 @@ public abstract class Vehicle {
         this.license = license;
     }
 
-    // ===== color =====
 
     public String getColor() {
         return color;
@@ -62,8 +55,6 @@ public abstract class Vehicle {
         this.color = color;
     }
 
-    // ===== year =====
-
     public int getYear() {
         return year;
     }
@@ -72,7 +63,6 @@ public abstract class Vehicle {
         this.year = year;
     }
 
-    // ===== ownerName =====
 
     public String getOwnerName() {
         return ownerName;
@@ -82,8 +72,6 @@ public abstract class Vehicle {
         this.ownerName = ownerName;
     }
 
-    // ===== insuranceNumber =====
-
     public String getInsuranceNumber() {
         return insuranceNumber;
     }
@@ -91,8 +79,6 @@ public abstract class Vehicle {
     public void setInsuranceNumber(String insuranceNumber) {
         this.insuranceNumber = insuranceNumber;
     }
-
-    // ===== engineType =====
 
     public String getEngineType() {
         return engineType;
@@ -102,10 +88,8 @@ public abstract class Vehicle {
         this.engineType = engineType;
     }
 
-    // Абстрактный метод
     public abstract String vehicleType();
 
-    // Вывод информации об объекте
     @Override
     public String toString() {
         return "Vehicle{" +

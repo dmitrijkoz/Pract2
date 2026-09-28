@@ -11,7 +11,6 @@ public class Car extends Vehicle {
             String insuranceNumber,
             String engineType
     ) {
-        // Используем конструктор родительского класса
         super(
                 model,
                 license,

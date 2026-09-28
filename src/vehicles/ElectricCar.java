@@ -25,16 +25,13 @@ public class ElectricCar extends Car {
 
         this.batteryCapacity = batteryCapacity;
 
-        // protected-поле родительского класса
         this.engineType = "Electric";
     }
 
-    // Getter
     public double getBatteryCapacity() {
         return batteryCapacity;
     }
 
-    // Setter
     public void setBatteryCapacity(double batteryCapacity) {
         this.batteryCapacity = batteryCapacity;
     }
