@@ -93,8 +93,7 @@ public abstract class Vehicle {
     @Override
     public String toString() {
         return "Vehicle{" +
-                "vehicleType='" + vehicleType() + '\'' +
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", license='" + license + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +

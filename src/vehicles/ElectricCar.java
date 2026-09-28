@@ -40,4 +40,9 @@ public class ElectricCar extends Car {
     public String vehicleType() {
         return "Electric Car";
     }
+    @Override
+    public String toString() {
+        return super.toString()
+                + ", batteryCapacity=" + batteryCapacity + " кВт·ч";
+    }
 }
